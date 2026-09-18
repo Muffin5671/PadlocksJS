@@ -1,4 +1,4 @@
-class Padlock extends Sprite {
+class Padlock extends PIXI.Sprite {
   constructor(score) {
     super();
 
@@ -14,6 +14,7 @@ class Padlock extends Sprite {
 class Time {
   constructor() {
     this.seconds = 0;
+    this.intID = null;
   }
 
   start() {
@@ -30,7 +31,10 @@ class Time {
 class Score {
   constructor() {
     this.amount = 0;
-    this.above200 = this.amount > 200;
+  }
+
+  get above200() {
+    return this.amount > 200;
   }
 }
 

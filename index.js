@@ -11,3 +11,4 @@ const options = {
 };
 
 await app.init(options);
+console.log("App running");

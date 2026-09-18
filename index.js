@@ -1,3 +1,4 @@
+import { Application } from "./pixi.min.js";
 import { Padlock, Time, Score } from "./game/main.js";
 
 const app = new Application();
